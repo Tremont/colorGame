@@ -1,25 +1,35 @@
 
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Forms</title>
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="colorGame.css">
 </head>
 <body>
+<h1>
+	The Great
+	<br>
+	<span id="colorDisplay">RGB</span>
+	<br>
+	Color Game
+</h1>
 
-<form>
- <input type="email" placeholder="email" required>
- <input type="password" placeholder="password" required>
- <button>submit</button>
-</form>
+<div id="stripe">
+	<button id="reset">New Colors</button>
+	<span id="message"></span>
+	<button class="mode">Easy</button>
+	<button class="mode selected">Hard</button>
+</div>
 
- <form>
-  <select  name="select">
- 	<option value="select">Select</option>
- 	<option value="dog"> dog</option>
- 	<option value="cat">cat</option>
- </select>
-</form>
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
 
-
-
+<script type="text/javascript" src="colorGame.js"></script>
 </body>
 </html>
